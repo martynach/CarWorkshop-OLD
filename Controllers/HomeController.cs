@@ -29,8 +29,8 @@ public class HomeController : Controller
         // return View(message);
 
         var myNumber = 55;
-        return View(myNumber)
-        
+        return View(myNumber);
+
     }
     
     public IActionResult About()
