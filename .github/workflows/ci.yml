@@ -1,0 +1,25 @@
+name: Continuous integration
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-18.04
+    steps:
+       - name: Checkout
+         uses: actions/checkout@v4.1.1
+       - name: Setup .NET Core SDK
+         uses: actions/setup-dotnet@v4.0.0
+       - name: Restore dependencies
+         run: dotnet restore
+       - name: Build
+         run: dotnet build --no-restore
+       - name: Test
+         run: dotnet test
+         
+
+    
+    
