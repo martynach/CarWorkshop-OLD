@@ -30,7 +30,7 @@ public class HomeController : Controller
 
         var myNumber = 55;
         return View(myNumber);
-        
+
     }
     
     public IActionResult About()
