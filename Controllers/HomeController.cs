@@ -37,7 +37,7 @@ public class HomeController : Controller
     {
         var about = new AboutViewModel()
         {
-            Title = "M&T car workshop",
+            Title = "M&T car workshop SUPER",
             Description = "Best car workshop in the whole city",
             Tags = new String[] { "cars", "ford", "mercedes", "workshop" }
         };
